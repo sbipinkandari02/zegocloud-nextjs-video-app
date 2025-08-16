@@ -12,12 +12,10 @@ function generateUserId() {
   return "user_" + Math.random().toString(36).substring(2, 10);
 }
   const myMeeting = async (element: HTMLDivElement) => {
-    console.log("Room ID:", roomId, element);
     // Dynamically import the library on the client
       const { ZegoUIKitPrebuilt } = await import("@zegocloud/zego-uikit-prebuilt");
-    // generate Kit Token
-    const appID = 971145496;
-    const serverSecret = "800806bc4281eb19b024bac6560e7ca3";
+    const appID = Number(process.env.NEXT_PUBLIC_ZEGO_APP_ID);
+    const serverSecret = process.env.NEXT_PUBLIC_ZEGO_SERVER_SECRET as string;
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
       serverSecret,
