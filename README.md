@@ -1,69 +1,36 @@
-# zegocloud-nextjs-video-app
-ZEGOCLOUD Next.js Video App
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A real-time video calling and conferencing application built with ZEGOCLOUD and Next.js.
-This project demonstrates how to integrate ZEGOCLOUD’s Web SDK into a Next.js app for high-quality, low-latency video calls with simple APIs.
+## Getting Started
 
-🚀 Features
+First, run the development server:
 
-🔹 Real-time 1:1 video calls and group video conferencing
-
-🔹 Cross-platform compatibility (Web, Mobile browser support)
-
-🔹 High-quality audio & video powered by ZEGOCLOUD
-
-🔹 Room-based joining (create or join rooms by ID)
-
-🔹 Lightweight Next.js integration
-
-🔹 Easy to extend for chat, screen-sharing, or recording
-
-🛠️ Tech Stack
-
-Next.js – React framework for server-side rendering
-
-ZEGOCLOUD Web SDK – Real-time video & audio communication
-
-TailwindCSS (optional, for styling)
-
-📦 Installation
-
-Clone the repository
-
-git clone https://github.com/your-username/zegocloud-nextjs-video-app.git
-cd zegocloud-nextjs-video-app
-
-
-Install dependencies
-
-yarn install
+```bash
+npm run dev
 # or
-npm install
-
-
-Add environment variables in .env.local:
-
-NEXT_PUBLIC_ZEGO_APP_ID=your_zegocloud_app_id
-NEXT_PUBLIC_ZEGO_SERVER_SECRET=your_zegocloud_server_secret
-
-
-🔑 You can get these from ZEGOCLOUD Console.
-
-Run the development server:
-
 yarn dev
 # or
-npm run dev
+pnpm dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The app will be available at http://localhost:3000.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-🎥 Usage
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Open the app in your browser
+## Learn More
 
-Enter a room ID (any string) and your username
+To learn more about Next.js, take a look at the following resources:
 
-Click Join Room to start a video call
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Share the room ID with others so they can join the same room
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
